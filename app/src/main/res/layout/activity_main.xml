@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="215dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:contentDescription="@string/dice"
+            app:srcCompat="@drawable/d1" />
+
+        <ImageView
+            android:id="@+id/iv_dice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginRight="223dp"
+            android:contentDescription="@string/dice"
+            app:srcCompat="@drawable/d1" />
+
+        <Button
+            android:id="@+id/btn_roll"
+            android:layout_width="171dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/iv_dice"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:contentDescription="@string/btn_desc1"
+            android:text="@string/roll1" />
+
+        <TextView
+            android:id="@+id/tv_rollNumber"
+            android:layout_width="310dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/btn_roll"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
